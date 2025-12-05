@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cartel de Licitación para Servicio de Cocinera - Centro Diurno Hatillo San Sebastián">
+    <title>Licitación Comedor</title>
+    
+    <!-- Icono para la pestaña del navegador (Favicon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍲</text></svg>">
+
+    <!-- Tailwind CSS (Estilos modernos) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome (Iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts (Tipografía) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Configuración base */
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f3f4f6;
+            -webkit-print-color-adjust: exact; /* Asegura que los colores se impriman bien */
+            print-color-adjust: exact;
+        }
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+        }
+        
+        /* Fondo con patrón sutil */
+        .pattern-bg {
+            background-color: #ffffff;
+            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* Efecto de elevación en tarjetas */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* --- ESTILOS PARA IMPRESIÓN --- */
+        @media print {
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-container {
+                box-shadow: none !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                border: none !important;
+            }
+            /* Ocultar sombras y efectos al imprimir para ahorrar tinta y limpieza */
+            .card-hover {
+                break-inside: avoid;
+                box-shadow: none !important;
+                border: 1px solid #ddd !important;
+            }
+            /* Asegurar que los textos sean negros puro para mejor lectura */
+            p, h1, h2, h3, h4, li {
+                color: #000 !important;
+            }
+            /* Mantener colores de fondo importantes */
+            .bg-orange-500, .bg-green-500, .bg-blue-500, .bg-gray-800 {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body class="py-4 px-3 md:py-8 md:px-4 text-gray-700 pattern-bg min-h-screen">
+
+    <!-- Botón Flotante para Imprimir (No sale en el papel) -->
+    <div class="fixed bottom-6 right-6 z-50 no-print flex gap-3">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-5 rounded-full shadow-lg flex items-center gap-2 transition-all transform hover:scale-105 cursor-pointer border-2 border-white">
+            <i class="fas fa-print"></i> Imprimir cartel
+        </button>
+    </div>
+
+    <!-- Hoja Principal del Cartel -->
+    <main class="print-container max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden border-t-8 border-orange-500">
+        
+        <!-- ENCABEZADO -->
+        <header class="bg-orange-50 p-6 md:p-8 text-center border-b border-orange-100">
+            <span class="inline-block px-3 py-1 mb-3 text-xs font-bold tracking-wider text-orange-600 uppercase bg-orange-200 rounded-full">
+                Organización Comunal sin fines de lucro
+            </span>
+            <h2 class="text-xl md:text-2xl text-gray-600 font-light mb-2">Centro Diurno de Ancianos Hatillo San Sebastián</h2>
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+                <span class="text-orange-600">CARTEL DE LICITACIÓN:</span><br>SERVICIO DE COCINERA
+            </h1>
+            
+            <!-- Frase destacada -->
+            <div class="mt-6 p-4 bg-white rounded-lg shadow-sm border-l-4 border-green-500 inline-block max-w-2xl mx-auto">
+                <p class="text-lg md:text-xl text-gray-700 italic">
+                    <i class="fas fa-bullhorn text-green-500 mr-2"></i>
+                    "Buscamos una persona comprometida y con experiencia para alimentar con cariño a nuestros adultos mayores."
+                </p>
+            </div>
+        </header>
+
+        <!-- SECCIÓN 1: EL PUESTO -->
+        <section class="p-5 md:p-8">
+            <!-- Título de sección -->
+            <div class="flex items-center gap-4 mb-6">
+                <div class="bg-orange-500 text-white w-10 h-10 flex items-center justify-center rounded-full font-bold text-xl shadow-md">1</div>
+                <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-orange-200 pb-1">El Puesto: Objetivo y Funciones</h3>
+            </div>
+
+            <!-- Misión Principal -->
+            <div class="bg-blue-50 p-6 rounded-xl mb-6 border border-blue-100">
+                <h4 class="font-bold text-lg text-blue-800 mb-2 flex items-center">
+                    <i class="fas fa-bullseye text-orange-500 mr-3 text-xl"></i>Misión Principal
+                </h4>
+                <p class="text-gray-700 text-lg">Preparación diaria de alimentos (desayuno, almuerzo, refrigerio) para las personas usuarias del centro.</p>
+            </div>
+
+            <!-- Grid de Funciones -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card-hover bg-white p-5 border border-gray-100 rounded-xl shadow-sm">
+                    <div class="text-orange-500 text-3xl mb-3"><i class="fas fa-utensils"></i></div>
+                    <h4 class="font-bold text-gray-800 text-lg">Cocinar</h4>
+                    <p class="text-sm text-gray-600 mt-1">Preparar menús diarios balanceados y sabrosos.</p>
+                </div>
+                <div class="card-hover bg-white p-5 border border-gray-100 rounded-xl shadow-sm">
+                    <div class="text-orange-500 text-3xl mb-3"><i class="fas fa-calendar-alt"></i></div>
+                    <h4 class="font-bold text-gray-800 text-lg">Planificar</h4>
+                    <p class="text-sm text-gray-600 mt-1">Diseñar menús semanales para aprobación nutricional.</p>
+                </div>
+                <div class="card-hover bg-white p-5 border border-gray-100 rounded-xl shadow-sm">
+                    <div class="text-green-500 text-3xl mb-3"><i class="fas fa-pump-soap"></i></div>
+                    <h4 class="font-bold text-gray-800 text-lg">Higiene</h4>
+                    <p class="text-sm text-gray-600 mt-1">Mantener cocina y utensilios impecables según protocolos.</p>
+                </div>
+                <div class="card-hover bg-white p-5 border border-gray-100 rounded-xl shadow-sm">
+                    <div class="text-blue-500 text-3xl mb-3"><i class="fas fa-clipboard-list"></i></div>
+                    <h4 class="font-bold text-gray-800 text-lg">Control</h4>
+                    <p class="text-sm text-gray-600 mt-1">Gestionar inventario y reportar necesidades de compra.</p>
+                </div>
+                <div class="card-hover bg-white p-5 border border-gray-100 rounded-xl shadow-sm md:col-span-2 lg:col-span-1">
+                    <div class="text-purple-500 text-3xl mb-3"><i class="fas fa-hands-helping"></i></div>
+                    <h4 class="font-bold text-gray-800 text-lg">Apoyo</h4>
+                    <p class="text-sm text-gray-600 mt-1">Colaborar en actividades especiales que requieran alimentación.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separador visual -->
+        <div class="px-8"><hr class="border-gray-200"></div>
+
+        <!-- CONTENEDOR CENTRAL: PERFIL Y DOCUMENTOS -->
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            
+            <!-- SECCIÓN 2: PERFIL -->
+            <section class="p-5 md:p-8 border-b md:border-b-0 md:border-r border-gray-200 bg-orange-50/30">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="bg-orange-500 text-white w-10 h-10 flex items-center justify-center rounded-full font-bold text-xl shadow-md">2</div>
+                    <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-orange-200 pb-1">Perfil Requerido</h3>
+                </div>
+                
+                <ul class="space-y-5">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                        <div>
+                            <span class="font-bold text-gray-800 block text-lg">Experiencia</span>
+                            <span class="text-gray-600">Mínimo 2 años en colectividades (comedores, escuelas, etc).</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-certificate text-blue-500 mt-1 mr-3 text-xl"></i>
+                        <div>
+                            <span class="font-bold text-gray-800 block text-lg">Certificación</span>
+                            <span class="text-gray-600">Curso de Manipulación de Alimentos al día.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-heart text-red-500 mt-1 mr-3 text-xl"></i>
+                        <div>
+                            <span class="font-bold text-gray-800 block text-lg">Habilidades</span>
+                            <span class="text-gray-600">Buenas prácticas de higiene y trato cariñoso con adultos mayores.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-clock text-gray-500 mt-1 mr-3 text-xl"></i>
+                        <div>
+                            <span class="font-bold text-gray-800 block text-lg">Horario</span>
+                            <span class="text-gray-600">Lunes a Viernes, de 8:00 am a 3:30 pm.</span>
+                        </div>
+                    </li>
+                    <!-- Caja de "Plus" -->
+                    <li class="bg-yellow-50 p-4 rounded-lg border border-yellow-200 flex items-start mt-2">
+                        <i class="fas fa-star text-yellow-500 mt-1 mr-3 text-xl"></i>
+                        <div>
+                            <span class="font-bold text-yellow-800 block">Deseable (Plus)</span>
+                            <span class="text-sm text-yellow-800">Experiencia en dietas especiales (diabetes, hipertensión).</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- SECCIÓN 3: DOCUMENTACIÓN -->
+            <section class="p-5 md:p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="bg-orange-500 text-white w-10 h-10 flex items-center justify-center rounded-full font-bold text-xl shadow-md">3</div>
+                    <h3 class="text-2xl font-bold text-gray-800 border-b-2 border-orange-200 pb-1">Documentación</h3>
+                </div>
+                <p class="text-sm text-gray-500 mb-4 font-bold uppercase tracking-wide">Incluir obligatoriamente:</p>
+                
+                <div class="space-y-3">
+                    <div class="flex items-center p-4 bg-white border-l-4 border-orange-400 rounded shadow-sm hover:bg-gray-50 transition-colors">
+                        <i class="far fa-file-alt text-gray-400 text-2xl mr-4"></i>
+                        <span class="font-medium text-gray-700 text-lg">Currículum Vitae actualizado</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-white border-l-4 border-orange-400 rounded shadow-sm hover:bg-gray-50 transition-colors">
+                        <i class="far fa-id-card text-gray-400 text-2xl mr-4"></i>
+                        <span class="font-medium text-gray-700 text-lg">Copia de Cédula</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-white border-l-4 border-orange-400 rounded shadow-sm hover:bg-gray-50 transition-colors">
+                        <i class="fas fa-award text-gray-400 text-2xl mr-4"></i>
+                        <div class="leading-tight">
+                            <span class="font-medium text-gray-700 text-lg block">Cert. Manipulación Alimentos</span>
+                            <span class="text-xs text-gray-500 font-bold uppercase">Debe estar vigente</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-white border-l-4 border-orange-400 rounded shadow-sm hover:bg-gray-50 transition-colors">
+                        <i class="fas fa-building text-gray-400 text-2xl mr-4"></i>
+                        <span class="font-medium text-gray-700 text-lg">Constancias laborales</span>
+                    </div>
+                    <div class="flex items-center p-4 bg-white border-l-4 border-orange-400 rounded shadow-sm hover:bg-gray-50 transition-colors">
+                        <i class="fas fa-balance-scale text-gray-400 text-2xl mr-4"></i>
+                        <span class="font-medium text-gray-700 text-lg">Hoja de delincuencia reciente</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SECCIÓN 4: ENTREGA -->
+        <section class="bg-gray-800 text-white p-8 md:p-12 relative overflow-hidden">
+            <!-- Decoración de fondo -->
+            <div class="absolute top-0 right-0 -mr-10 -mt-10 w-48 h-48 bg-orange-500 rounded-full opacity-20"></div>
+            <div class="absolute bottom-0 left-0 -ml-10 -mb-10 w-48 h-48 bg-blue-500 rounded-full opacity-20"></div>
+
+            <div class="relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4 border-b border-gray-600 pb-4">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-white text-gray-800 w-10 h-10 flex items-center justify-center rounded-full font-bold text-xl">4</div>
+                        <h3 class="text-2xl font-bold">Proceso de Entrega</h3>
+                    </div>
+                    <div class="text-orange-400 font-bold tracking-wide text-sm bg-gray-700 px-3 py-1 rounded">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>IMPORTANTE
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Columna Izquierda: Sobre -->
+                    <div>
+                        <p class="text-gray-300 mb-4 font-bold text-lg">¿Cómo entregar la oferta?</p>
+                        <div class="bg-white/10 p-6 rounded-lg border-2 border-dashed border-white/30 hover:bg-white/15 transition-colors">
+                            <p class="font-bold text-orange-300 mb-2 flex items-center"><i class="fas fa-envelope mr-2 text-xl"></i>EN SOBRE CERRADO</p>
+                            <p class="text-sm text-gray-300 mb-2">Con el siguiente rótulo en el exterior:</p>
+                            <p class="mt-2 text-white italic font-serif text-lg bg-gray-900 p-3 rounded text-center">"Licitación – Servicio de Cocinera – Centro Diurno Hatillo San Sebastián"</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna Derecha: Datos de entrega (Editables) -->
+                    <div class="space-y-6">
+                        <div class="flex items-start group">
+                            <div class="bg-gray-700 p-2 rounded-full mr-4 group-hover:bg-orange-600 transition-colors">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <span class="text-gray-400 text-xs uppercase tracking-wider block mb-1">Lugar de entrega</span>
+                                <div class="font-bold text-xl text-white border-b border-dashed border-gray-500 pb-1 cursor-pointer hover:text-orange-300 transition-colors editable-field" title="Clic para editar">
+                                    Oficina Administrativa del Centro
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start group">
+                            <div class="bg-gray-700 p-2 rounded-full mr-4 group-hover:bg-orange-600 transition-colors">
+                                <i class="fas fa-calendar-day text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <span class="text-gray-400 text-xs uppercase tracking-wider block mb-1">Fecha límite</span>
+                                <div class="font-bold text-xl text-white border-b border-dashed border-gray-500 pb-1 cursor-pointer hover:text-orange-300 transition-colors editable-field" title="Clic para editar">
+                                    [ Ingresar Fecha ]
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start group">
+                            <div class="bg-gray-700 p-2 rounded-full mr-4 group-hover:bg-orange-600 transition-colors">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <span class="text-gray-400 text-xs uppercase tracking-wider block mb-1">Hora límite</span>
+                                <div class="font-bold text-xl text-white border-b border-dashed border-gray-500 pb-1 cursor-pointer hover:text-orange-300 transition-colors editable-field" title="Clic para editar">
+                                    [ 00:00 ] pm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 pt-6 border-t border-gray-700 text-center text-sm text-gray-400">
+                    <p>La Junta Administrativa revisará las ofertas y elegirá la mejor opción basándose en los criterios de experiencia y compromiso.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer de la página -->
+        <footer class="bg-gray-100 p-4 text-center text-xs text-gray-500 border-t border-gray-200">
+            <p>© Centro Diurno de Ancianos Hatillo San Sebastián.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Script simple para permitir editar los campos de fecha/hora haciendo click en ellos
+        document.querySelectorAll('.editable-field').forEach(el => {
+            el.addEventListener('click', function() {
+                let currentText = this.innerText;
+                if(currentText.includes('[')) currentText = ""; // Limpiar si es el texto placeholder
+                
+                let newText = prompt("Ingrese el dato:", currentText);
+                if (newText) {
+                    this.innerText = newText;
+                    this.style.borderBottom = "none";
+                    this.style.color = "#fbbf24"; // Color dorado para indicar cambio
+                    this.classList.remove('border-dashed');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
